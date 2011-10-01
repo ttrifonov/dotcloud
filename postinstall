@@ -1,6 +1,8 @@
 #!/bin/sh
 
-#python app1/manage.py syncdb --noinput
+python app1/manage.py syncdb --noinput --settings=evolve-settings
+python app1/manage.py evolve hint --hint --execute --noinput --settings=evolve-settings
+
 mkdir -p /home/dotcloud/data/media /home/dotcloud/data/static
 #python app1/manage.py collectstatic --noinput
 
