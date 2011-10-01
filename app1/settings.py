@@ -12,6 +12,7 @@ MANAGERS = ADMINS
 import json
 with open('/home/dotcloud/environment.json') as f:
     env = json.load(f)
+print env
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
